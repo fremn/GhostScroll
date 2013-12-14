@@ -449,14 +449,6 @@ li {
     background-size: cover;
 }
 
-.social {
-    background-color: rgba(0,0,0 0.5);
-}
-.social div {
-    float: left;
-    border: 1px solid red;
-}
-
 #site-head:after {
 
 }
