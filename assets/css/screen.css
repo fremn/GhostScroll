@@ -449,6 +449,10 @@ li {
     background-size: cover;
 }
 
+.social {
+    margin: 3em 0;
+}
+
 #site-head:after {
 
 }
