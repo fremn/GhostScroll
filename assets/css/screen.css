@@ -450,15 +450,17 @@ li {
 }
 
 .social {
-    margin: 3em;
 }
 
 .social a {
-    margin: .5em;
+    padding: 0;
+    margin:  2.5%;
+    color:   rgba(245, 245, 245, 0.75);;
+
 }
 
 .social a:hover {
-   color: rgba(250, 250, 250, 0.99);;
+   color: rgba(250, 250, 250, 0.95);;
 
 }
 
