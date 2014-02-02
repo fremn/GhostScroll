@@ -94,6 +94,25 @@ body {
     color: #000;
     background: #f2efe8;
 }
+
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 5px 10%;
+    box-sizing: border-box;
+    z-index: 99;
+}
+
+nav div {
+    float: left;
+}
+
+nav div a {
+    border: none;
+    color: grey;
+    font-size: 0.7em;f
+
+}
 #wrap {min-height: 100%;}
 
 .content {overflow:auto;
@@ -538,6 +557,7 @@ li {
    just for the lolz and stylepoints. */
 
 .fixed-nav {
+    color: grey;
     display: none;
     opacity: 1;
     position: fixed;
@@ -549,6 +569,12 @@ li {
     font-size: 1.5rem;
     line-height: 130%;
     font-weight: bold;
+}
+.fixed-nav a {
+    border: none;
+}
+.fixed-nav.visible {
+    display: block;
 }
 a.fn-item {
     border: none;

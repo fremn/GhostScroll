@@ -5,7 +5,12 @@
 
 <div id="wrap"> {{!--used to fix footer to page bottom http://www.cssstickyfooter.com/using-sticky-footer-code.html  --}}
 <main class="content" role="main">
-
+    <div class='fixed-nav visible'>
+        <a href="/">fre.mn</a>
+        {{#foreach posts}}
+            <a href="{{url}}">{{post.title}}</a>
+        {{/foreach}}
+    </div>
     <article class="{{post_class}}">
 
         {{! Each post has the blog logo at the top, with a link back to the home page }}
