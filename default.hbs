@@ -37,9 +37,29 @@
 </head>
 
 <body class="{{body_class}}">
-    
+    <div class="off-canvas-wrap">   
+         <div class="inner-wrap">
+
+            <a class="left-off-canvas-toggle" >Menu</a> 
+
+            <!-- Off Canvas Menu -->
+            <aside class="left-off-canvas-menu">
+                <!-- whatever you want goes here -->
+                <ul>
+                  <li><a href="#">Item 1</a></li>
+                ...
+                </ul>
+            </aside>
+
+            <!-- main content goes here -->
+
               {{! Everything else gets inserted here }}
              {{{body}}}
+
+            <!-- close the off-canvas menu -->
+            <a class="exit-off-canvas"></a>
+        </div>
+    </div>
  
     <footer class="site-footer">
         <div class="inner">
