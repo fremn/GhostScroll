@@ -699,7 +699,7 @@ a.fn-item.active {
 
 /* Create some space to the right for the share links */
 .post-footer .author {
-    margin-right: 180px;
+    margin-right: 80px;
 }
 
 /* Drop the share links in the space to the right.
@@ -710,7 +710,6 @@ a.fn-item.active {
     position: absolute;
     top: 4rem;
     right: 0;
-    width: 140px;
 }
 
 .post-footer .share a {
