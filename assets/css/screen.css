@@ -176,7 +176,7 @@ a {
 }
 
 a:hover {
-    color: #86c440;
+    color: #3DC0C0;
 }
 
 a.btn {
@@ -597,7 +597,7 @@ a.go_home {
 
 }
 a.go_home:hover {
-    color: #111;
+    color:#3DC0C0;
 }
 
 .post-excerpt p {
@@ -742,11 +742,11 @@ a.go_home:hover {
     font-size: 1.8rem;
     display: inline-block;
     margin: 1.4rem 1.6rem 1.6rem 0;
-    color: #BBC7CC;
+    color: #50585D;
 }
 
 .post-footer .share a:hover {
-    color: #50585D;
+    color: #3DC0C0;
 }
 
 
