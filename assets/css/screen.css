@@ -94,6 +94,11 @@ body {
     color: #000;
     background: #f2efe8;
 }
+#wrap {min-height: 100%;}
+
+.content {overflow:auto;
+    padding-bottom: 90px;}  /* must be same height as the footer */
+
 
 ::-moz-selection {
     color: #222;
@@ -558,7 +563,7 @@ a.fn-item.active {
 
 }
 
-.post-after {
+/*.post-after {
     position: absolute;
     bottom: -40px;
     right: 6%;
@@ -567,9 +572,9 @@ a.fn-item.active {
     height: 0; 
     border-left: 60px solid transparent;
     border-right: 60px solid transparent;
-    border-top: 50px solid #f2efe8;
+    border-top: 50px solid red;
     border-radius: 25px;
-}
+}*/
 
 .post-title {
     margin:0;
@@ -822,9 +827,18 @@ a.fn-item.active {
 /* ==========================================================================
    8. Footer - The bottom of every page
    ========================================================================== */
-
+/*Opera Fix*/
+body:before {
+    content:"";
+    height:100%;
+    float:left;
+    width:0;
+    margin-top:-32767px;/
+}
 .site-footer {
     position: relative;
+    width: 100%;
+    bottom: 0;
     margin: 0rem 0 0 0;
     padding: 1rem 0;
     font-family: 'Open Sans', sans-serif;
@@ -833,6 +847,9 @@ a.fn-item.active {
     color: #BBC7CC;
     text-align: center;
     background: #22343A;
+    margin-top: -90px; /* negative value of footer height */
+    height: 90px;
+    clear:both;
 }
 
 .site-footer a {
