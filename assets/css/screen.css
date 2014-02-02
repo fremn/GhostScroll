@@ -97,7 +97,7 @@ body {
 #wrap {min-height: 100%;}
 
 .content {overflow:auto;
-    padding-bottom: 90px;}  /* must be same height as the footer */
+    padding-bottom: 70px;}  /* must be same height as the footer */
 
 
 ::-moz-selection {
@@ -167,6 +167,8 @@ h6 {
 }
 
 a {
+    text-decoration: none;
+    border-bottom: 2px solid;
     color: inherit;
     transition: all ease 0.3s;
     -webkit-transition: all ease 0.3s;
@@ -180,6 +182,7 @@ a:hover {
 a.btn {
     
     text-decoration: none;
+    border: none;
     background-color: #9fd067;
     border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -436,6 +439,7 @@ li {
 }
 
 
+
 /* ==========================================================================
    4. General - The main styles for the the theme
    ========================================================================== */
@@ -457,6 +461,7 @@ li {
 }
 
 .social a {
+    border: none;
     padding: 0;
     margin:  2.5%;
     color:   rgba(245, 245, 245, 0.75);;
@@ -546,6 +551,7 @@ li {
     font-weight: bold;
 }
 a.fn-item {
+    border: none;
     display: block;
     cursor: pointer;
     opacity: 0.7;
@@ -582,6 +588,16 @@ a.fn-item.active {
 
 .post-title a {
     text-decoration: none;
+}
+a.go_home {
+    color: grey;
+    font-size: .7em;
+    text-align: center;
+    margin: 0 auto;
+
+}
+a.go_home:hover {
+    color: #111;
 }
 
 .post-excerpt p {
@@ -681,14 +697,17 @@ a.fn-item.active {
 /* The author credit area after the post */
 .post-footer {
     position: relative;
-    margin: 4rem 0 0 0;
-    padding: 4rem 0 0 0;
-    border-top: #EBF2F6 1px solid;
+    margin: 3rem 0 1rem 0;
+    padding: 2rem 0 0 0;
+    border-top: solid;
+    color: #682330;
 }
 
 .post-footer h4 {
     font-size: 1.8rem;
     margin: 0;
+    font-weight: normal;
+    text-transform: capitalize;
 }
 
 .post-footer p {
@@ -702,17 +721,24 @@ a.fn-item.active {
     margin-right: 80px;
 }
 
+.post-footer .author a {
+    text-decoration: none;
+}
+.post-footer .author a:hover {
+    color: inherit;
+}
 /* Drop the share links in the space to the right.
    Doing it like this means it's easier for the author bio
    to be flexible at smaller screen sizes while the share
    links remain at a fixed width the whole time */
 .post-footer .share {
     position: absolute;
-    top: 4rem;
+    top: 2rem;
     right: 0;
 }
 
 .post-footer .share a {
+    border: none;
     font-size: 1.8rem;
     display: inline-block;
     margin: 1.4rem 1.6rem 1.6rem 0;
@@ -843,21 +869,22 @@ body:before {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3rem;
     line-height: 1.5em;
-    color: #BBC7CC;
+    color: #93989B;
     text-align: center;
     background: #22343A;
-    margin-top: -90px; /* negative value of footer height */
-    height: 90px;
+    min-height: auto;
+    margin-top: -70px; /* negative value of footer height */
+    height: 70px;
     clear:both;
 }
 
 .site-footer a {
+    border: none;
     color: #BBC7CC;
-    text-decoration: underline;
 }
 
 .site-footer a:hover {
-    color: #50585D;
+    color: #BBC872;
 }
 
 .poweredby .i-ghost {

@@ -31,12 +31,14 @@
         <section class="post-content">
             {{content}}
         </section>
-
+           
         <footer class="post-footer">
-
+                
             {{#if author}}
+
                 <section class="author">
-                    <h4>{{author.name}}</h4>
+                      <a href="https://plus.google.com/u/0/+FremenDeruvo?" rel="author">
+                    <h4> Written By {{author.name}}</h4></a>
                     <p>{{author.bio}}</p>
                 </section>
             {{/if}}
@@ -55,13 +57,13 @@
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
+
             </section>
-
+             <a href="/" class="go_home"><p> return home</p></a>
         </footer>
-
+            
         {{/post}}
 
     </article>
-
 </main>
 </div>
