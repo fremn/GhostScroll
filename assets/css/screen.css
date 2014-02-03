@@ -556,7 +556,7 @@ li {
 /* Add a little circle in the middle of the border-bottom on our .post
    just for the lolz and stylepoints. */
 
-.fixed-nav {
+.fixed-nav, .side-nav {
     color: grey;
     display: none;
     opacity: 1;
@@ -570,10 +570,10 @@ li {
     line-height: 130%;
     font-weight: bold;
 }
-.fixed-nav a {
+.side-nav a {
     border: none;
 }
-.fixed-nav.visible {
+.side-nav.visible {
     display: block;
 }
 a.fn-item {
